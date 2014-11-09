@@ -1,4 +1,4 @@
 RaspberryPi
 ===========
 
-Project around the Raspberry Pi B+
+Projects around the Raspberry Pi B+
