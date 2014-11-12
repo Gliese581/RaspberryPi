@@ -72,15 +72,14 @@ def ledClean():
 def countToNumber(num):
     for i in range(0,num+1):
         ledWrite(i)
-        time.sleep(0.2)
+        time.sleep(0.1)
         ledClean()
 
 if len(sys.argv) == 1 or sys.argv[1] == "help":
-    print "Usage: <option> <number>\n"
-    print "options: test, clean, write, count2\n"
-    print "numbers: [0 - 9] and [dot] for write option\n"
-    print "Example: sudo ./ledAnzeige.py count2 7\n"
-    print "or : sudo ./ledAnzeige.py write dot"
+    print "Usage: command <option> <number>\n"
+    print "options: test, clean, write, count2"
+    print "numbers: [0 - 9]\n"
+    print "Example: sudo ./ledAnzeige.py count2 7"
 
 for arg in sys.argv:
     if arg == "test":
